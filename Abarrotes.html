@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open 25</title>
+
+    <link rel="icon" href="Imagenes/Icono.png">
+    <link rel="stylesheet" href="CSS/CssCategorias.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="FunciónCantd.js" defer></script>
+</head>
+<body>
+    <header style="background-color: rgb(253, 166, 51);">
+        <div class="container text-center">
+            <div class="row form-group">
+                <div class="col-md-2"><a href="Inicio.html"><img src="Imagenes/logo1.jpeg" alt="Logo" width="115px"></a></div>
+                <div class="col-md-7" id="buscador"><input type="text" name="txtbuscador" id="txtbuscador" maxlength="40" placeholder="Hola ¿Que estas buscando?"></div>
+                <div class="col-md-2" id="Usuario"><a href="login.html"><i class="fa-solid fa-user" style="color: white;">Usuario</i></a></div>
+                <div class="col-md-1" id="carrito"><a href="carrodecompra.html" class=""carrito><i class="fa-solid fa-cart-shopping" style="color: white;"></i></a></div>
+            </div>
+        </div>
+    </header><br>
+    <div class="">
+        <div class="row">
+            <div class="col-md-2" >
+                <div class="row">
+                    <div class="col-md-1"> Categorias</div>
+                </div>
+                <div class="row" id="">
+                    <ul id="Categorias">
+                        <li><a href="Abarrotes.html" class="Categorias" style="color: blue;">Abarrotes</a></li>
+                        <li><a href="Lacteos.html" class="Categorias">Lacteos</a></li>
+                        <li><a href="FrutasYverduras.html" class="Categorias">Frutas y verduras</a></li>
+                        <li><a href="BebidasYrefrescos.html" class="Categorias">Bebidas</a></li>
+                        <li><a href="Higiene.html" class="Categorias">Higiene</a></li>
+                        <li><a href="Helados.html" class="Categorias">Helados</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="card" style="width: 18rem; height: auto" >
+                            <img src="Imagenes/ArrozCoste.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h6>Arroz extra Costeño</h6>
+                                Cantidad: 5kg.<br>
+                                    Precio: s/25
+                            </div>
+                            <section class="button_qyantity">
+                                <div class="box b1">
+                                    <h3 id="amount" value="">0</h3>
+                                </div>
+                                <div class="box b2">
+                                    <div><button class="button" id="disableBtn" onclick="addValueFunction(this)" value="increase">+</button></div>
+                                    <div><button class="button" onclick="addValueFunction(this)" value="decrease">-</button></div>
+                                </div>
+                                <div class="box b3">
+                                    <a href="#" class="colors">Agregar</a>
+                                </div>
+                            
+
+                            </section>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 18rem; height: auto" >
+                            <img src="Imagenes/ArrozMetro.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h6>Arroz extra Metro</h6>
+                                Cantidad: 1kg. </br> 
+                                Precio: s/3.8
+                            </div>
+                            <section class="button_qyantity">
+                                <div class="box b1">
+                                    <h3 id="amount1" value="">0</h3>
+                                </div>
+                                <div class="box b2">
+                                    <div><button class="button" id="disableBtn" onclick="addValueFunction(this)" value="increase1">+</button></div>
+                                    <div><button class="button" onclick="addValueFunction(this)" value="decrease1">-</button></div>
+                                </div>
+                                <div class="box b3">
+                                    <a href="#" class="colors">Agregar</a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 18rem; height: auto;" >
+                            <img src="Imagenes/ArrozValleNorte.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h6 class="card-title">Arroz Superior Valle Norte</h6>
+                              <p class="card-text">s/21.95</p>
+                              <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="card" style="width: 18rem; height: auto" >
+                            <img src="Imagenes/ArrozGran.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h6 class="card-title">Arroz Superior Gran Chalán</h6>
+                              <p class="card-text">s/4.25</p>
+                              <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    for producto of productos
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 18rem; height: auto" >
+                            <img src="Imagenes/AceiteBells.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h6 class="card-title">Aceite Bells</h6>
+                              <p class="card-text">s/11.59</p>
+                              <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 18rem; height: auto" >
+                            <img src="Imagenes/AceiteCocinero.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h6 class="card-title">Aceite Cocinero</h6>
+                              <p class="card-text">s/7.99</p>
+                              <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="card" style="width: 18rem; height: auto" >
+                            <img src="Imagenes/AceiteSao.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h6 class="card-title">Aceite Sao</h6>
+                              <p class="card-text">s/8.45</p>
+                              <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 18rem; height: auto" >
+                            <img src="Imagenes/AceiteGirasol.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h6 class="card-title">Aceite de girasol</h6>
+                              <p class="card-text">s/14.5</p>
+                              <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 18rem; height: auto;" >
+                            <img src="Imagenes/Aceite vegetal.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h6 class="card-title">Aceite vegetal</h6>
+                              <p class="card-text">s/7.20</p>
+                              <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="card" style="width: 18rem; height: auto" >
+                            <img src="Imagenes/AceiteOliva.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h6 class="card-title">Aceite de oliva</h6>
+                              <p class="card-text">s/15.90</p>
+                              <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 18rem; height: auto" >
+                            <img src="Imagenes/AceiteAjonjoli.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                              <h6 class="card-title">Aceite de Ajonjolí</h6>
+                              <p class="card-text">s/14.50</p>
+                              <a href="#" class="btn btn-primary">Agregar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><br>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div style="color: white; background-color: rgb(253, 166, 51);" align="center"><br>     
+            <table cellpadding="8" align="center">
+                <tr>
+                    <td colspan="3"  width="52%">No olvides seguirnos en:</td>
+                    <td width="33%">¿Dudas? Contactenos a:</td>
+                </tr>
+            </table><br>
+            <p>&copy; 2023 Todos los derechos reservados</p><br>
+        </div>
+    </footer>
+</body>
+</html>

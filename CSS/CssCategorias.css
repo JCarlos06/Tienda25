@@ -1,0 +1,92 @@
+#buscador{  
+    padding-top: 2.3%;
+  }
+  #Usuario{
+    padding-top: 2.3%;
+  }
+  #carrito{
+    padding-top: 2.3%;
+  }
+  #txtbuscador{
+      height:30px;
+      width: 600px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      border: 1px solid wheat;
+      padding: 0 4px 0 4px;
+  }
+  #ColabCat{
+      
+      background-color: rgb(253, 166, 51);
+      border: color(srgb 253 166 51);
+  }
+  #Categorias{
+
+      list-style: none;
+  }
+  .Categorias{
+   text-decoration: none;
+   color: black;
+  }
+  .card-body{
+    text-align: center;
+
+  }
+
+  .button_qyantity{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+
+    margin-left: 2.8em;
+
+  }
+
+  .box{
+    margin:4px;
+  }
+
+  .button{
+    padding: 0.5px 6px;
+    border-radius: 0.5em;
+    background-color: rgb(173, 172, 172);
+  
+  }
+  
+  .b1{
+    padding: 15px 25px;
+    background-color: rgb(173, 172, 172);
+    border-radius: 1em;
+
+  }
+  
+  .b2{
+    flex-direction: column;
+    margin:3px;
+    
+  }
+
+  .b3{
+    padding: 15px 15px;
+    background-color: rgb(253, 166, 51);
+    border-radius: 1em;
+    transition-property: background-color;
+    transition-duration: 0ms;
+    cursor: pointer;
+  }
+  
+  .b3:hover{
+    background-color: rgb(194, 187, 187);
+  }
+  .colors{
+    color:aliceblue;
+    text-decoration: none;
+    display: inline-block;
+
+  }
+
+
+
+  

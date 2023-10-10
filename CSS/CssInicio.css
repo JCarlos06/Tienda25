@@ -1,0 +1,30 @@
+                           #buscador{  
+  padding-top: 2.3%;
+}
+#Usuario{
+  padding-top: 2.3%;
+}
+#carrito{
+  padding-top: 2.3%;
+}
+#txtbuscador{
+    height:30px;
+    width: 600px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid wheat;
+    padding: 0 4px 0 4px;
+}
+#ColabCat{
+    
+    background-color: rgb(253, 166, 51);
+    border: color(srgb 253 166 51);
+}
+#Categorias{
+    list-style: none;
+}
+.Categorias{
+ text-decoration: none;
+ color: black;
+}
